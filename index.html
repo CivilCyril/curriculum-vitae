@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-title {
+        font-weight: 700;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #666;
+      }
+
+      .contact-info img {
+        height: 18px;
+        padding: 0px 3px 0px 5px;
+        margin: 0px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .divider {
+        height: 2px;
+        background-color: #3a3a3a;
+        margin: 5px 0;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .experience {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .job-period {
+        width: 140px;
+        padding-right: 20px;
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+
+      .sub-period {
+        color: #666;
+        font-weight: 300;
+      }
+
+      .job-details {
+        flex-grow: 1;
+      }
+
+      .company-name,
+      .job-title {
+        font-weight: 700;
+      }
+
+      .achievements {
+        margin-top: 0px;
+        font-size: 16px;
+      }
+
+      .achievements ul {
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        list-style-type: disc;
+      }
+
+      .achievements ul li {
+        margin-bottom: 5px;
+      }
+
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .skills-list li {
+        margin-right: 10px;
+        font-size: 14px;
+        background-color: #f0f0f0;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .company-description {
+        padding: 0 0 3px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="name">Kirill Otvagin</div>
+        <div class="contact-info">
+          Email: kirill.otvagin@gmail.com |
+          Linkedin: linkedin.com/in/kirill-otvagin
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="divider"></div>
+        <div class="summary">
+          BI Developer with over 7 years of experience in data analytics, data warehousing, and end-to-end business
+          intelligence development across various industries, including pharmaceuticals, electronics, and banking.
+          Self-motivated and goal-oriented with strong attention to details, I have a proven track record of enhancing
+          reporting processes and conducting in-depth analyses to support key business decisions
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="divider"></div>
+        <div class="skills">
+          <ul class="skills-list">
+            <li>Qlik Sense</li>
+            <li>Tableau</li>
+            <li>Power BI</li>
+            <li>PostgreSQL</li>
+            <li>Greenplum</li>
+            <li>Oracle</li>
+            <li>Python</li>
+            <li>Redis</li>
+            <li>VBA</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Professional Experience</div>
+        <div class="divider"></div>
+        <div class="experience">
+          <div class="job-period">09.2023 - Present<br>(1 yr 3 mos)</div>
+          <div class="job-details">
+            <div class="company-name">Sberbank, CIB</div>
+            <div class="company-description">Leading European bank specializing in financial services and digital
+              solutions for businesses and individuals</div>
+            <div class="job-title">Senior BI Developer</div>
+            Responsible for developing dashboards for Key Clients department and Key Client Lending department, redesign
+            of legacy dashboards in terms of user experience and efficiency
+            <div class="achievements">
+              <ul>
+                <li>Lead the BI team's migration from Vizlib to Qlik's standard visualization</li>
+                <li>Redesigned the Tribe's Key Metrics dashboard, enhancing the user experience, which led to a threefold
+                  increase in monthly active users</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="experience">
+          <div class="job-period">03.2022 - 08.2023<br>(1 yr 6 mos)</div>
+          <div class="job-details">
+            <div class="company-name">Johnson & Johnson, Commercial Excellence Department</div>
+            <div class="company-description">Global pharmaceutical and consumer healthcare company, committed to
+              innovation in health</div>
+            <div class="job-title">BI Analyst</div>
+            Responsible for the development of dashboards for sales and marketing teams and the evaluation of weekly
+            primary and secondary sales forecasting
+            <div class="achievements">
+              <ul>
+                <li>Developed One-Pager reports for Key Account Managers, addressing 85% of ad-hoc needs for client
+                  meeting preparation</li>
+                <li>Reworked the Primary Sales Forecasting tool using Power Query, reducing update time by 30% and
+                  integrating additional data sources for varied analysis scenarios</li>
+                <li>Created a Consumption Tool that decreased the Marketing team's consumption forecast preparation time
+                  by 50%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="experience">
+          <div class="job-period">09.2017 - 03.2022<br>(4 yr 7 mos)</div>
+          <div class="job-details">
+            <div class="company-name">LG Electronics RUS, Go To Market Department</div>
+            <div class="company-description">Multinational leader in consumer electronics, home appliances, and IT
+              products</div>
+          </div>
+        </div>
+        <div class="experience">
+          <div class="job-period"><span class="sub-period">06.2018 - 03.2022</span></div>
+          <div class="job-details">
+            <div class="job-title">Data Analyst</div>
+            Responsible for data analysis in the Home Entertainment Business Unit, focusing on federal and regional
+            chains, field force KPI evaluation, and potential store openings
+            <div class="achievements">
+              <ul>
+                <li>Developed a data warehouse with automated updates using MS SQL Server and Python</li>
+                <li>Built Power Pivot master file for ad-hoc solutions and BI reporting in Power BI for deeper analysis
+                </li>
+                <li>Improved sales performance by 15% through enhanced KPI tracking and incentive program management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <div class="job-period"><span class="sub-period">09.2017 - 05.2018</span></div>
+          <div class="job-details">
+            <div class="job-title">Data Specialist</div>
+            Responsible for data analysis in the Home Entertainment Business Unit for federal and regional chains, with a
+            focus on automating report processing
+            <div class="achievements">
+              <ul>
+                <li>Automated the processing of weekly sales reports for federal and regional clients using VBA macros,
+                  reducing processing time by 95%</li>
+                <li>Developed a template for Regional Key Account Managers to track and maintain clients' KPIs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="divider"></div>
+        <div class="summary">
+          <strong>Russian Presidential Academy of National Economy & Public Administration</strong> – Faculty of
+          Economics, Business Informatics
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
