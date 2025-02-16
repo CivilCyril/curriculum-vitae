@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+      
       body {
         font-family: Roboto, sans-serif;
         background-color: #f9f9f9;
@@ -17,7 +18,7 @@
         max-width: 900px;
         margin: 0 auto;
         background-color: #fff;
-        padding: 40px;
+        padding: 25px 20px 10px;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
       }
 
@@ -27,11 +28,11 @@
 
       .header {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 8px;
       }
 
       .name {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
       }
 
@@ -42,12 +43,6 @@
         margin-top: 5px;
         font-size: 16px;
         color: #666;
-      }
-
-      .contact-info img {
-        height: 18px;
-        padding: 0px 3px 0px 5px;
-        margin: 0px;
       }
 
       .contact-item {
@@ -62,7 +57,7 @@
       }
 
       .section {
-        margin-bottom: 20px;
+        margin-bottom: 8px;
       }
 
       .experience {
@@ -101,7 +96,7 @@
       .achievements ul {
         padding-left: 20px;
         margin-top: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 8px;
         list-style-type: disc;
       }
 
@@ -115,10 +110,10 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
+        gap: 8px;
       }
 
       .skills-list li {
-        margin-right: 10px;
         font-size: 14px;
         background-color: #f0f0f0;
         padding: 5px 10px;
@@ -128,6 +123,11 @@
       .company-description {
         padding: 0 0 3px 0;
       }
+      @media print {
+        body {
+          zoom: 90%;
+        }
+      }
     </style>
   </head>
 
@@ -136,8 +136,14 @@
       <div class="header">
         <div class="name">Kirill Otvagin</div>
         <div class="contact-info">
-          Email: kirill.otvagin@gmail.com |
-          Linkedin: linkedin.com/in/kirill-otvagin
+          Email:&nbsp;
+          <a href="mailto:kirill.otvagin@gmail.com">
+            kirill.otvagin@gmail.com 
+          </a>&nbsp;|
+          Linkedin:&nbsp;
+          <a href="https://www.linkedin.com/in/kirill-otvagin" target="_blank">
+            linkedin.com/in/kirill-otvagin
+          </a>
         </div>
       </div>
       <div class="section">
@@ -173,17 +179,19 @@
         <div class="section-title">Professional Experience</div>
         <div class="divider"></div>
         <div class="experience">
-          <div class="job-period">09.2023 - Present<br>(1 yr 3 mos)</div>
+          <div class="job-period">09.2023 - Present<br>
+            <div class="experience-js"></div>
+          </div>
           <div class="job-details">
             <div class="company-name">Sberbank, CIB</div>
             <div class="company-description">Leading European bank specializing in financial services and digital
               solutions for businesses and individuals</div>
             <div class="job-title">Senior BI Developer</div>
-            Responsible for developing dashboards for Key Clients department and Key Client Lending department, redesign
-            of legacy dashboards in terms of user experience and efficiency
+            Responsible for developing dashboards for Key Clients department and Key Client Lending department, and managing BI team's releases of dashboards
             <div class="achievements">
               <ul>
-                <li>Lead the BI team's migration from Vizlib to Qlik's standard visualization</li>
+                <li>Lead team's migration to a new BI platform</li>
+                <li>Led the BI team's migration from Vizlib library to Qlik's standard visualization</li>
                 <li>Redesigned the Tribe's Key Metrics dashboard, enhancing the user experience, which led to a threefold
                   increase in monthly active users</li>
               </ul>
@@ -265,6 +273,24 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function getExperienceString(startDate) {
+          const start = new Date(startDate);
+          const now = new Date();
+          
+          const totalMonths = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+          
+          const totalYears = Math.floor(totalMonths / 12);
+
+          const monthRemainder = totalMonths % 12
+
+          const experienceStr = `(${totalYears} yr ${monthRemainder} mos)`
+
+          return experienceStr;
+      }
+      document.querySelector('.experience-js').innerHTML = getExperienceString("2023-09");
+    </script>
   </body>
 
 </html>
